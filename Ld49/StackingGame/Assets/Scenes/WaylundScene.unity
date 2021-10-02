@@ -1144,7 +1144,7 @@ PrefabInstance:
       objectReference: {fileID: 8548430378129359813, guid: a5b1141d77f7be44a99b46b9f23f65d3, type: 3}
     - target: {fileID: 8092486675729974340, guid: 554a1f86a55046f44acdda6c4bc3a153, type: 3}
       propertyPath: gradientList.Array.data[0].atime0
-      value: 578
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8092486675729974340, guid: 554a1f86a55046f44acdda6c4bc3a153, type: 3}
       propertyPath: gradientList.Array.data[0].atime1
@@ -1168,7 +1168,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8092486675729974340, guid: 554a1f86a55046f44acdda6c4bc3a153, type: 3}
       propertyPath: gradientList.Array.data[0].key0.a
-      value: 0.78431374
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8092486675729974340, guid: 554a1f86a55046f44acdda6c4bc3a153, type: 3}
       propertyPath: gradientList.Array.data[0].key0.b
@@ -1184,7 +1184,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8092486675729974340, guid: 554a1f86a55046f44acdda6c4bc3a153, type: 3}
       propertyPath: gradientList.Array.data[0].key1.a
-      value: 0.78431374
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8092486675729974340, guid: 554a1f86a55046f44acdda6c4bc3a153, type: 3}
       propertyPath: gradientList.Array.data[0].key1.b
