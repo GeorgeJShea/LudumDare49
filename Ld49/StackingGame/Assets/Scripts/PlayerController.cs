@@ -5,9 +5,9 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     private bool hasBlock = false;
+    private Collider2D currentBlockCollider;
     private float direction = 1f;
     private bool isResetting = true;
-    private int resetCounter = 0;
     private PolygonCollider2D colliderRef;
     private bool gamePlaying = true;
     public GameObject block;
@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // this is used to manage interactions between the platform and the block
         colliderRef = GetComponent<PolygonCollider2D>();
     }
 
@@ -25,19 +26,13 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         if (gamePlaying) {
-            if (isResetting) {
-                resetCounter++;
-                if (resetCounter == 50) {
-                    colliderRef.enabled = true;
-                }
-            }
 
             // check if the player is trying to drop the block
-
             if (Input.GetKeyDown(KeyCode.Space) && hasBlock) {
                 // releaseBlock
-                colliderRef.enabled = false;
+                Physics2D.IgnoreCollision(colliderRef, currentBlockCollider);
                 hasBlock = false;
+                // This tells it to move back to the start position
                 isResetting = true;
             }
 
@@ -47,16 +42,22 @@ public class PlayerController : MonoBehaviour
                 movePlatform();
             }
         } else if (Input.GetKeyDown(KeyCode.Return)) {
+            // Reset the game
+            // turn off the game over screen
             GameObject.FindWithTag("GameOver").GetComponent<UnityEngine.UI.Text>().enabled = false;
+            // reset score
             GameObject.FindWithTag("GameController").GetComponent<GameManagement>().resetScore();
+            // clear out the blocks
             GameObject[] allBlocks = GameObject.FindGameObjectsWithTag("Block");
             for (int i = 0; i < allBlocks.Length; i++) {
+                // don't delete the landing pad
                 if (allBlocks[i].name != "LandingPlatform") {
                     GameObject.Destroy(allBlocks[i]);
                 }
             }
-            colliderRef.enabled = true;
+            // Tell it we don't have a block, in case we did when the game ended
             hasBlock = false;
+            // turn the game back in
             gamePlaying = true;
             spawnNewBlock();
         }
@@ -64,7 +65,7 @@ public class PlayerController : MonoBehaviour
 
     void movePlatform() {
         float xVal = transform.position.x;
-            // If it hits the bounds, change direction
+        // If it hits the bounds, change direction
         if (xVal > rightBound || isResetting) {
             direction = -1f;
         } else if (xVal < leftBound) {
@@ -74,6 +75,7 @@ public class PlayerController : MonoBehaviour
     }
 
     public void setGameState(bool gState) {
+        // this lets other classes stop or start the game - this should maybe more to GameManager
         gamePlaying = gState;
         if (!gState) {
             GameObject.FindWithTag("GameOver").GetComponent<UnityEngine.UI.Text>().enabled = true;
@@ -82,7 +84,6 @@ public class PlayerController : MonoBehaviour
 
     private void spawnNewBlock() {
         isResetting = false;
-        resetCounter = 0;
         direction = 1f;
         // spawn block once
         transform.position = new Vector3(-8f,3.4f,0);
@@ -91,9 +92,14 @@ public class PlayerController : MonoBehaviour
     }
 
     private void OnCollisionEnter2D(Collision2D other) {
+        // if the platform is colliding with a block
         if (other.gameObject.CompareTag("Block")) {
+            // Say it has a block
             hasBlock = true;
+            // reference the collider of the block - we'll use this to release the block later
+            currentBlockCollider = other.collider;
         } else if (other.gameObject.CompareTag("Respawn")) {
+            // If we bump into the respawn object while resetting, spawn a block
             if (isResetting) {
                 spawnNewBlock();
             }

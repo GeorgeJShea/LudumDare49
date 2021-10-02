@@ -10,9 +10,7 @@ public class BlockScorer : MonoBehaviour
     void Start()
     {
         GameObject manager = GameObject.FindWithTag("GameController");
-        Debug.Log("Manager: " + manager);
         gameManagement = manager.GetComponent<GameManagement>();
-        Debug.Log("Script: " + gameManagement);
     }
 
     // Update is called once per frame

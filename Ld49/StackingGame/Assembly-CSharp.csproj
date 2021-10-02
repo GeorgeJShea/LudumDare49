@@ -40,6 +40,9 @@
      <Compile Include="Assets\Scripts\FloorLava.cs" />
      <Compile Include="Assets\Scripts\GameManagement.cs" />
      <Compile Include="Assets\Scripts\BlockScorer.cs" />
+     <Compile Include="Assets\Camera Rigging\BackColor.cs" />
+     <Compile Include="Assets\Camera Rigging\Movement.cs" />
+     <Compile Include="Assets\Camera Rigging\Destroy.cs" />
     <Reference Include="UnityEngine">
         <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -252,6 +255,9 @@
     </Reference>
     <Reference Include="UnityEditor.UnityConnectModule">
         <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression.FileSystem">
+        <HintPath>/Users/danielmlynn/Documents/Stacker/LudumDare49/Ld49/StackingGame/Library/PackageCache/com.unity.connect.share@4.2.2/Plugins/System.IO.Compression.FileSystem.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
         <HintPath>/Applications/Unity/Unity.app/Contents/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -687,6 +693,15 @@
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Runtime">
         <HintPath>/Users/danielmlynn/Documents/Stacker/LudumDare49/Ld49/StackingGame/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Play.Publisher.Editor">
+        <HintPath>/Users/danielmlynn/Documents/Stacker/LudumDare49/Ld49/StackingGame/Library/ScriptAssemblies/Unity.Play.Publisher.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.EditorCoroutines.Editor">
+        <HintPath>/Users/danielmlynn/Documents/Stacker/LudumDare49/Ld49/StackingGame/Library/ScriptAssemblies/Unity.EditorCoroutines.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.InternalAPIEditorBridgeDev.001">
+        <HintPath>/Users/danielmlynn/Documents/Stacker/LudumDare49/Ld49/StackingGame/Library/ScriptAssemblies/Unity.InternalAPIEditorBridgeDev.001.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
