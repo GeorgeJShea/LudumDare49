@@ -6,12 +6,16 @@ public class BlockScorer : MonoBehaviour
 {
     private GameManagement gameManagement;
     public GameObject smokePrefab;
+    public Sprite[] sprites;
 
     // Start is called before the first frame update
     void Start()
     {
         GameObject manager = GameObject.FindWithTag("GameController");
         gameManagement = manager.GetComponent<GameManagement>();
+        SpriteRenderer faceSprite = gameObject.transform.GetChild(0).GetComponent<SpriteRenderer>();
+        int whichFace = Random.Range(0,3);
+        faceSprite.sprite = sprites[whichFace];
     }
 
     // Update is called once per frame

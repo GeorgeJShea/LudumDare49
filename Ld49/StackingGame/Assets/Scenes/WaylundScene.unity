@@ -570,6 +570,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   smokePrefab: {fileID: 2625640677945752385, guid: 4c99c12606e3240bdab0676646a3925a, type: 3}
+  sprites: []
 --- !u!1 &895481578
 GameObject:
   m_ObjectHideFlags: 0
