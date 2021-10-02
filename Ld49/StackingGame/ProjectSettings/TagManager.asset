@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Block
   - GameOver
+  - Score
   layers:
   - Default
   - TransparentFX

@@ -46,6 +46,19 @@ public class PlayerController : MonoBehaviour
                 // move left and right
                 movePlatform();
             }
+        } else if (Input.GetKeyDown(KeyCode.Return)) {
+            GameObject.FindWithTag("GameOver").GetComponent<UnityEngine.UI.Text>().enabled = false;
+            GameObject.FindWithTag("GameController").GetComponent<GameManagement>().resetScore();
+            GameObject[] allBlocks = GameObject.FindGameObjectsWithTag("Block");
+            for (int i = 0; i < allBlocks.Length; i++) {
+                if (allBlocks[i].name != "LandingPlatform") {
+                    GameObject.Destroy(allBlocks[i]);
+                }
+            }
+            colliderRef.enabled = true;
+            hasBlock = false;
+            gamePlaying = true;
+            spawnNewBlock();
         }
     }
 
@@ -62,6 +75,19 @@ public class PlayerController : MonoBehaviour
 
     public void setGameState(bool gState) {
         gamePlaying = gState;
+        if (!gState) {
+            GameObject.FindWithTag("GameOver").GetComponent<UnityEngine.UI.Text>().enabled = true;
+        }
+    }
+
+    private void spawnNewBlock() {
+        isResetting = false;
+        resetCounter = 0;
+        direction = .01f;
+        // spawn block once
+        transform.position = new Vector3(-8f,3.4f,0);
+        Vector3 spawnLocation = new Vector3(-8.45f, 6.19f, 0);
+        Instantiate(block, spawnLocation, Quaternion.identity);
     }
 
     private void OnCollisionEnter2D(Collision2D other) {
@@ -69,12 +95,7 @@ public class PlayerController : MonoBehaviour
             hasBlock = true;
         } else if (other.gameObject.CompareTag("Respawn")) {
             if (isResetting) {
-                isResetting = false;
-                resetCounter = 0;
-                direction = .01f;
-                // spawn block once
-                Vector3 spawnLocation = new Vector3(-8.45f, 6.19f, 0);
-                Instantiate(block, spawnLocation, Quaternion.identity);
+                spawnNewBlock();
             }
         }
     }
