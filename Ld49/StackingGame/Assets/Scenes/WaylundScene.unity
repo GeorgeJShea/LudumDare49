@@ -444,7 +444,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   block: {fileID: 5356857363812149406, guid: 220cb665a38284f508186e96525d98b5, type: 3}
-  speed: 6
+  speed: 4
   leftBound: -8
   rightBound: 8
 --- !u!1 &865198271

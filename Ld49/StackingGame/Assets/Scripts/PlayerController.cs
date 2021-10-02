@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     private bool hasBlock = false;
-    private float direction = .01f;
+    private float direction = 1f;
     private bool isResetting = true;
     private int resetCounter = 0;
     private PolygonCollider2D colliderRef;
@@ -27,7 +27,7 @@ public class PlayerController : MonoBehaviour
         if (gamePlaying) {
             if (isResetting) {
                 resetCounter++;
-                if (resetCounter == 30) {
+                if (resetCounter == 50) {
                     colliderRef.enabled = true;
                 }
             }
@@ -66,11 +66,11 @@ public class PlayerController : MonoBehaviour
         float xVal = transform.position.x;
             // If it hits the bounds, change direction
         if (xVal > rightBound || isResetting) {
-            direction = -.01f;
+            direction = -1f;
         } else if (xVal < leftBound) {
-            direction = .01f;
+            direction = 1f;
         }
-        transform.position = new Vector3(xVal+(direction*speed), 3.4f, 0); 
+        transform.position = new Vector3(xVal+(direction*speed)*Time.deltaTime, 3.4f, 0); 
     }
 
     public void setGameState(bool gState) {
@@ -83,7 +83,7 @@ public class PlayerController : MonoBehaviour
     private void spawnNewBlock() {
         isResetting = false;
         resetCounter = 0;
-        direction = .01f;
+        direction = 1f;
         // spawn block once
         transform.position = new Vector3(-8f,3.4f,0);
         Vector3 spawnLocation = new Vector3(-8.45f, 6.19f, 0);
