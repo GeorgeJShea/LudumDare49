@@ -24,7 +24,7 @@ public class BlockScorer : MonoBehaviour
         GameObject camera = GameObject.FindWithTag("MainCamera");
         Vector3 cameraPosition = camera.transform.position;
         if (blockPosition > cameraPosition.y) {
-            camera.transform.position = new Vector3(cameraPosition.x, blockPosition, 0f);
+            camera.transform.position = new Vector3(cameraPosition.x, blockPosition, cameraPosition.z);
         }
     }
 
