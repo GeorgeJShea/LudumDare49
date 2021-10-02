@@ -20,6 +20,6 @@ public class FloorLava : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other) {
         controller.setGameState(false);
-        Debug.Log("GAME OVER");
+        GameObject.FindWithTag("GameOver").GetComponent<UnityEngine.UI.Text>().enabled = true;
     }
 }
