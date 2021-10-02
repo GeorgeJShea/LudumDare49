@@ -36,13 +36,14 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\PlayerController_bak.cs" />
      <Compile Include="Assets\Scripts\FloorLava.cs" />
      <Compile Include="Assets\Scripts\GameManagement.cs" />
      <Compile Include="Assets\Scripts\BlockScorer.cs" />
      <Compile Include="Assets\Camera Rigging\BackColor.cs" />
      <Compile Include="Assets\Camera Rigging\Movement.cs" />
      <Compile Include="Assets\Camera Rigging\Destroy.cs" />
+     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Reference Include="UnityEngine">
         <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
