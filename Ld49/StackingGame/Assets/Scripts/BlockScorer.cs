@@ -13,9 +13,11 @@ public class BlockScorer : MonoBehaviour
     {
         GameObject manager = GameObject.FindWithTag("GameController");
         gameManagement = manager.GetComponent<GameManagement>();
-        SpriteRenderer faceSprite = gameObject.transform.GetChild(0).GetComponent<SpriteRenderer>();
-        int whichFace = Random.Range(0,3);
-        faceSprite.sprite = sprites[whichFace];
+        if (gameObject.transform.childCount > 0) {
+            SpriteRenderer faceSprite = gameObject.transform.GetChild(0).GetComponent<SpriteRenderer>();
+            int whichFace = Random.Range(0,4);
+            faceSprite.sprite = sprites[whichFace];
+        }
     }
 
     // Update is called once per frame

@@ -25,7 +25,7 @@ MonoBehaviour:
   m_MinSize: {x: 706, y: 471}
   m_MaxSize: {x: 18001, y: 14021}
   vertical: 0
-  controlID: 15334
+  controlID: 17699
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -139,7 +139,7 @@ MonoBehaviour:
   m_MinSize: {x: 201, y: 421}
   m_MaxSize: {x: 4001, y: 8021}
   vertical: 1
-  controlID: 15314
+  controlID: 17700
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -332,7 +332,7 @@ MonoBehaviour:
   m_MinSize: {x: 230, y: 471}
   m_MaxSize: {x: 10000, y: 14021}
   vertical: 1
-  controlID: 15293
+  controlID: 17679
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -405,7 +405,7 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 8}
+        m_ClientGUIView: {fileID: 0}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -491,7 +491,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: fa490000
     m_LastClickedID: 18938
-    m_ExpandedIDs: fc8affffffffffff000000008242000096420000e24f000038540000246b0000406b000000ca9a3b
+    m_ExpandedIDs: fc8affffffffffff000000008242000096420000e24f000038540000406b000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -519,7 +519,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 14430000
     m_LastClickedID: 17172
-    m_ExpandedIDs: fc8affffffffffff000000008242000096420000e24f000038540000246b0000406b000000ca9a3b
+    m_ExpandedIDs: fc8affffffffffff000000008242000096420000e24f000038540000406b000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -535,7 +535,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 10}
+      m_ClientGUIView: {fileID: 0}
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -633,7 +633,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: 17172
-  m_LastVerticalScrollValue: 743
+  m_LastVerticalScrollValue: 247.83966
   m_GlobalObjectId: 
   m_LockTracker:
     m_IsLocked: 0
