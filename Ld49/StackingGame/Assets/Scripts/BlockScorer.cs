@@ -5,6 +5,7 @@ using UnityEngine;
 public class BlockScorer : MonoBehaviour
 {
     private GameManagement gameManagement;
+    private Animator animator;
     public GameObject smokePrefab;
     public Sprite[] sprites;
 
@@ -13,23 +14,27 @@ public class BlockScorer : MonoBehaviour
     {
         GameObject manager = GameObject.FindWithTag("GameController");
         gameManagement = manager.GetComponent<GameManagement>();
-        if (gameObject.transform.childCount > 0) {
-            SpriteRenderer faceSprite = gameObject.transform.GetChild(0).GetComponent<SpriteRenderer>();
-            int whichFace = Random.Range(0,4);
-            faceSprite.sprite = sprites[whichFace];
+        if (name!="LandingPlatform") {
+            animator = transform.GetChild(0).GetComponent<Animator>();
         }
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (name!="LandingPlatform") {
+            if (transform.rotation.z > 0.1) {
+                animator.SetTrigger("concerned");
+            }
+            //animator.SetFloat("Rotation", transform.rotation.z);
+        }
     }
 
     private void checkCameraPosition(float blockPosition) {
         GameObject camera = GameObject.FindWithTag("MainCamera");
         Vector3 cameraPosition = camera.transform.position;
         if (blockPosition > cameraPosition.y) {
+            GameObject.FindWithTag("Player").GetComponent<PlayerController>().incrementYValue(blockPosition-cameraPosition.y);
             camera.transform.position = new Vector3(cameraPosition.x, blockPosition, cameraPosition.z);
         }
     }
@@ -40,6 +45,9 @@ public class BlockScorer : MonoBehaviour
             Vector3 smokePosition = new Vector3(transform.position.x, transform.position.y-0.35f, 0f);
             Instantiate(smokePrefab, smokePosition, Quaternion.identity);
             checkCameraPosition(other.transform.position.y);
+            if (name != "LandingPlatform") {
+                animator.SetTrigger("landed");
+            }
         }
     }
 }

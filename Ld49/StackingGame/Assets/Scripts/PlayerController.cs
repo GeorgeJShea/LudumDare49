@@ -11,6 +11,8 @@ public class PlayerController : MonoBehaviour
     public float leftBound = -9f;
     public float rightBound = 9f;
 
+    private float y_value = 4f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +32,9 @@ public class PlayerController : MonoBehaviour
             movePlatform();
         } else if (Input.GetKeyDown(KeyCode.Return)) {
             // Reset the game
+            //Application.LoadLevel(Application.loadedLevel);
+            UnityEngine.SceneManagement.SceneManager.LoadScene("WaylundScene");
+             /*
             // turn off the game over screen
             GameObject.FindWithTag("GameOver").GetComponent<UnityEngine.UI.Text>().enabled = false;
             // reset score
@@ -42,8 +47,12 @@ public class PlayerController : MonoBehaviour
                     GameObject.Destroy(allBlocks[i]);
                 }
             }
+            y_value=4f;
+            Transform cameraTransform = GameObject.FindWithTag("MainCamera").transform;
+            cameraTransform.position = new Vector3(cameraTransform.position.x,0f,cameraTransform.position.z);
             // turn the game back in
             gamePlaying = true;
+            */
         }
     }
 
@@ -55,7 +64,7 @@ public class PlayerController : MonoBehaviour
         } else if (xVal < leftBound) {
             direction = 1f;
         }
-        transform.position = new Vector3(xVal+(direction*speed)*Time.deltaTime, 4f, 0); 
+        transform.position = new Vector3(xVal+(direction*speed)*Time.deltaTime, y_value, 0); 
     }
 
     public void setGameState(bool gState) {
@@ -66,6 +75,9 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public void incrementYValue(float addOn) {
+        y_value += addOn;
+    }
     private void spawnNewBlock() {
         // spawn block once
         //transform.position = new Vector3(-8f,3.4f,0);

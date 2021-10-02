@@ -20,5 +20,6 @@ public class FloorLava : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other) {
         controller.setGameState(false);
+        other.transform.GetChild(0).GetComponent<Animator>().SetTrigger("die");
     }
 }
