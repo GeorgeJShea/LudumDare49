@@ -29,7 +29,7 @@ public class BlockScorer : MonoBehaviour
             //    animator.SetTrigger("concerned");
             //    didConcern = true;
             //}
-            animator.SetFloat("rotation", transform.rotation.z % 360f);
+            animator.SetFloat("rotation", System.Math.Abs(transform.rotation.z % 360f));
         }
     }
 
