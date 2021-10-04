@@ -3,11 +3,15 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - BackColor
     - BlockScorer
+    - ColorPicker
     - FloorLava
     - GameManagement
+    - MenuController
     - Movement
+    - Mover
     - PlayerController
-    - PlayerController_bak
+    - SelfDestruct
+    - Wiggle
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
@@ -15,8 +19,6 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.IK.Runtime.dll:
     - UnityEditor.U2D.IK.IKEditorManagerHelper
-    Unity.2D.SpriteShape.Runtime.dll:
-    - UnityEngine.U2D.SpriteShapeController
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
@@ -30,6 +32,12 @@ ScriptsOnlyBuild:
     - Unity.Play.Publisher.Editor.PublisherWindow
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
+    Unity.TextMeshPro.dll:
+    - TMPro.TMP_FontAsset
+    - TMPro.TMP_Settings
+    - TMPro.TMP_SpriteAsset
+    - TMPro.TMP_StyleSheet
+    - TMPro.TextMeshPro
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
@@ -50,6 +58,77 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Text
   sceneClasses:
+    Assets/Scenes/George_Scene.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 49
+      Script: {instanceID: 0}
+    - Class: 50
+      Script: {instanceID: 0}
+    - Class: 61
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1816}
+    - Class: 114
+      Script: {instanceID: 2206}
+    - Class: 114
+      Script: {instanceID: 3194}
+    - Class: 114
+      Script: {instanceID: 3942}
+    - Class: 114
+      Script: {instanceID: 4704}
+    - Class: 114
+      Script: {instanceID: 4736}
+    - Class: 114
+      Script: {instanceID: 5120}
+    - Class: 114
+      Script: {instanceID: 54564}
+    - Class: 114
+      Script: {instanceID: 54568}
+    - Class: 114
+      Script: {instanceID: 54576}
+    - Class: 114
+      Script: {instanceID: 56172}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
     Assets/Scenes/WaylundScene.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -64,8 +143,6 @@ ScriptsOnlyBuild:
     - Class: 48
       Script: {instanceID: 0}
     - Class: 50
-      Script: {instanceID: 0}
-    - Class: 60
       Script: {instanceID: 0}
     - Class: 61
       Script: {instanceID: 0}
@@ -86,8 +163,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1656}
     - Class: 114
-      Script: {instanceID: 2166}
-    - Class: 114
       Script: {instanceID: 2218}
     - Class: 114
       Script: {instanceID: 2632}
@@ -100,8 +175,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3266}
     - Class: 114
-      Script: {instanceID: 3398}
-    - Class: 114
       Script: {instanceID: 3588}
     - Class: 114
       Script: {instanceID: 4120}
@@ -109,6 +182,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 4704}
     - Class: 114
       Script: {instanceID: 4784}
+    - Class: 114
+      Script: {instanceID: 52290}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -130,8 +205,6 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
-      Script: {instanceID: 0}
-    - Class: 1971053207
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -418,7 +491,7 @@ ScriptsOnlyBuild:
     className: TextContainer
   - hash:
       serializedVersion: 2
-      Hash: 23e793a6152d4ea893a19c4b94643c21
+      Hash: 71e47dfb3353c4e54db4cb18c8ef6488
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BlockScorer
@@ -458,12 +531,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: BaseInput
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Destroy
   - hash:
       serializedVersion: 2
       Hash: 18c222bef9ae745ce69ddde9b74337ca
@@ -604,7 +671,7 @@ ScriptsOnlyBuild:
     className: ControlPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: 93ee8dd15d4b4f30760670d50e0bb31e
+      Hash: d28ee745cfff48cba6f3a9e1ac5d456b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BackColor
@@ -698,8 +765,50 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.IK.Runtime.dll
     namespaceName: UnityEngine.U2D.IK
     className: FabrikSolver2D
+  - hash:
+      serializedVersion: 2
+      Hash: 53996e64cb23d76699b0c4d3c872ec4e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ColorPicker
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SelfDestruct
+  - hash:
+      serializedVersion: 2
+      Hash: 0057e07596bcd0944c7e7b94ed5b0b74
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Mover
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ColorVariant
+  - hash:
+      serializedVersion: 2
+      Hash: 0057e07596bcd0944c7e7b94ed5b0b74
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Mover1
+  - hash:
+      serializedVersion: 2
+      Hash: 07b0c50b190b2abf70e51ca319ed0efd
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Wiggle
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MenuController
   platform: 20
   scenePathNames:
+  - Assets/Scenes/George_Scene.unity
   - Assets/Scenes/WaylundScene.unity
-  playerPath: /Users/danielmlynn/Documents/Stacker/LudumDare49/Ld49/StackingGame/WebGL
-    Builds
+  playerPath: /Users/danielmlynn/Documents/Stacker/LD49_Stacker

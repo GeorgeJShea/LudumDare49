@@ -7,13 +7,15 @@ public class BlockScorer : MonoBehaviour
     private GameManagement gameManagement;
     private Animator animator;
     public GameObject smokePrefab;
-    public Sprite[] sprites;
+    private bool didConcern = false;
 
     // Start is called before the first frame update
     void Start()
     {
         GameObject manager = GameObject.FindWithTag("GameController");
-        gameManagement = manager.GetComponent<GameManagement>();
+        if (manager) {
+            gameManagement = manager.GetComponent<GameManagement>();
+        }
         if (name!="LandingPlatform") {
             animator = transform.GetChild(0).GetComponent<Animator>();
         }
@@ -23,10 +25,11 @@ public class BlockScorer : MonoBehaviour
     void Update()
     {
         if (name!="LandingPlatform") {
-            if (transform.rotation.z > 0.1) {
-                animator.SetTrigger("concerned");
-            }
-            //animator.SetFloat("Rotation", transform.rotation.z);
+            //if (((transform.rotation.z % 360f) > 0.2 || (transform.rotation.z % 360f) < -0.2 ) && !didConcern) {
+            //    animator.SetTrigger("concerned");
+            //    didConcern = true;
+            //}
+            animator.SetFloat("rotation", transform.rotation.z % 360f);
         }
     }
 
@@ -43,11 +46,14 @@ public class BlockScorer : MonoBehaviour
         if (other.gameObject.CompareTag("Block")) {
             gameManagement.updateScore(10);
             Vector3 smokePosition = new Vector3(transform.position.x, transform.position.y-0.35f, 0f);
-            Instantiate(smokePrefab, smokePosition, Quaternion.identity);
+            //Instantiate(smokePrefab, smokePosition, Quaternion.identity);
             checkCameraPosition(other.transform.position.y);
             if (name != "LandingPlatform") {
                 animator.SetTrigger("landed");
             }
+        }
+        if (name != "LandingPlatform") {
+            GetComponent<AudioSource>().Play();
         }
     }
 }

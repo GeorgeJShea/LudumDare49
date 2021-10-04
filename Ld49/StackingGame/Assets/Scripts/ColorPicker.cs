@@ -10,7 +10,6 @@ public class ColorPicker : MonoBehaviour
     void Start()
     {
         Color selectedColor = gradient.Evaluate(Random.Range(0f,1f));
-        Debug.Log(selectedColor);
         GetComponent<SpriteRenderer>().color = selectedColor;
     }
 

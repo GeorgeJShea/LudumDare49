@@ -21,6 +21,7 @@
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/George_Scene.unity",
                 "Assets/Scenes/WaylundScene.unity"
             ]
         },
@@ -65,6 +66,7 @@
             "fullManagedTypeName": "UnityEngine.Material",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/George_Scene.unity",
                 "Assets/Scenes/WaylundScene.unity"
             ]
         },
@@ -109,6 +111,7 @@
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/George_Scene.unity",
                 "Assets/Scenes/WaylundScene.unity"
             ]
         },
@@ -125,6 +128,7 @@
             "fullManagedTypeName": "UnityEngine.TextAsset",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/George_Scene.unity",
                 "Assets/Scenes/WaylundScene.unity"
             ]
         },
@@ -134,6 +138,7 @@
             "fullManagedTypeName": "UnityEditor.MonoScript",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/George_Scene.unity",
                 "Assets/Scenes/WaylundScene.unity"
             ]
         },
@@ -143,6 +148,7 @@
             "fullManagedTypeName": "UnityEngine.Object",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/George_Scene.unity",
                 "Assets/Scenes/WaylundScene.unity"
             ]
         },
@@ -166,6 +172,7 @@
             "fullManagedTypeName": "UnityEngine.Shader",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/George_Scene.unity",
                 "Assets/Scenes/WaylundScene.unity"
             ]
         },
@@ -182,6 +189,7 @@
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/George_Scene.unity",
                 "Assets/Scenes/WaylundScene.unity"
             ]
         },
@@ -212,6 +220,294 @@
             "fullManagedTypeName": "UnityEngine.Camera",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/George_Scene.unity",
+                "Assets/Scenes/WaylundScene.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "MeshRenderer",
+            "fullManagedTypeName": "UnityEngine.MeshRenderer",
+            "moduleName": "Core",
+            "usedInScenes": [
+                "Assets/Scenes/George_Scene.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "AudioBehaviour",
+            "fullManagedTypeName": "UnityEngine.AudioBehaviour",
+            "moduleName": "Audio",
+            "usedInScenes": [
+                "Assets/Scenes/George_Scene.unity",
+                "Assets/Scenes/WaylundScene.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "AudioListener",
+            "fullManagedTypeName": "UnityEngine.AudioListener",
+            "moduleName": "Audio",
+            "usedInScenes": [
+                "Assets/Scenes/George_Scene.unity",
+                "Assets/Scenes/WaylundScene.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "Rigidbody2D",
+            "fullManagedTypeName": "UnityEngine.Rigidbody2D",
+            "moduleName": "Physics2D",
+            "usedInScenes": [
+                "Assets/Scenes/George_Scene.unity",
+                "Assets/Scenes/WaylundScene.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "BoxCollider2D",
+            "fullManagedTypeName": "UnityEngine.BoxCollider2D",
+            "moduleName": "Physics2D",
+            "usedInScenes": [
+                "Assets/Scenes/George_Scene.unity",
+                "Assets/Scenes/WaylundScene.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "AnimationClip",
+            "fullManagedTypeName": "UnityEngine.AnimationClip",
+            "moduleName": "Animation",
+            "usedInScenes": [
+                "Assets/Scenes/George_Scene.unity",
+                "Assets/Scenes/WaylundScene.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "Animator",
+            "fullManagedTypeName": "UnityEngine.Animator",
+            "moduleName": "Animation",
+            "usedInScenes": [
+                "Assets/Scenes/George_Scene.unity",
+                "Assets/Scenes/WaylundScene.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "AnimatorController",
+            "fullManagedTypeName": "UnityEditor.Animations.AnimatorController",
+            "moduleName": "Animation",
+            "usedInScenes": [
+                "Assets/Scenes/George_Scene.unity",
+                "Assets/Scenes/WaylundScene.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "RuntimeAnimatorController",
+            "fullManagedTypeName": "UnityEngine.RuntimeAnimatorController",
+            "moduleName": "Animation",
+            "usedInScenes": [
+                "Assets/Scenes/George_Scene.unity",
+                "Assets/Scenes/WaylundScene.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "Font",
+            "fullManagedTypeName": "UnityEngine.Font",
+            "moduleName": "TextRendering",
+            "usedInScenes": [
+                "Assets/Scenes/George_Scene.unity",
+                "Assets/Scenes/WaylundScene.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "Behaviour",
+            "fullManagedTypeName": "UnityEngine.Behaviour",
+            "moduleName": "Core",
+            "usedInScenes": [
+                "Assets/Scenes/George_Scene.unity",
+                "Assets/Scenes/WaylundScene.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "Renderer",
+            "fullManagedTypeName": "UnityEngine.Renderer",
+            "moduleName": "Core",
+            "usedInScenes": [
+                "Assets/Scenes/George_Scene.unity",
+                "Assets/Scenes/WaylundScene.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "Sprite",
+            "fullManagedTypeName": "UnityEngine.Sprite",
+            "moduleName": "Core",
+            "usedInScenes": [
+                "Assets/Scenes/George_Scene.unity",
+                "Assets/Scenes/WaylundScene.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "Texture2D",
+            "fullManagedTypeName": "UnityEngine.Texture2D",
+            "moduleName": "Core",
+            "usedInScenes": [
+                "Assets/Scenes/George_Scene.unity",
+                "Assets/Scenes/WaylundScene.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "RenderSettings",
+            "fullManagedTypeName": "UnityEngine.RenderSettings",
+            "moduleName": "Core",
+            "usedInScenes": [
+                "Assets/Scenes/George_Scene.unity",
+                "Assets/Scenes/WaylundScene.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "Component",
+            "fullManagedTypeName": "UnityEngine.Component",
+            "moduleName": "Core",
+            "usedInScenes": [
+                "Assets/Scenes/George_Scene.unity",
+                "Assets/Scenes/WaylundScene.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "Transform",
+            "fullManagedTypeName": "UnityEngine.Transform",
+            "moduleName": "Core",
+            "usedInScenes": [
+                "Assets/Scenes/George_Scene.unity",
+                "Assets/Scenes/WaylundScene.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "Texture",
+            "fullManagedTypeName": "UnityEngine.Texture",
+            "moduleName": "Core",
+            "usedInScenes": [
+                "Assets/Scenes/George_Scene.unity",
+                "Assets/Scenes/WaylundScene.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "Mesh",
+            "fullManagedTypeName": "UnityEngine.Mesh",
+            "moduleName": "Core",
+            "usedInScenes": [
+                "Assets/Scenes/George_Scene.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "GameObject",
+            "fullManagedTypeName": "UnityEngine.GameObject",
+            "moduleName": "Core",
+            "usedInScenes": [
+                "Assets/Scenes/George_Scene.unity",
+                "Assets/Scenes/WaylundScene.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "SpriteRenderer",
+            "fullManagedTypeName": "UnityEngine.SpriteRenderer",
+            "moduleName": "Core",
+            "usedInScenes": [
+                "Assets/Scenes/George_Scene.unity",
+                "Assets/Scenes/WaylundScene.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "",
+            "nativeClass": "NavMeshSettings",
+            "fullManagedTypeName": "",
+            "moduleName": "AI",
+            "usedInScenes": [
+                "Assets/Scenes/George_Scene.unity",
+                "Assets/Scenes/WaylundScene.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "MonoBehaviour",
+            "fullManagedTypeName": "UnityEngine.MonoBehaviour",
+            "moduleName": "Core",
+            "usedInScenes": [
+                "Assets/Scenes/George_Scene.unity",
+                "Assets/Scenes/WaylundScene.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "MeshFilter",
+            "fullManagedTypeName": "UnityEngine.MeshFilter",
+            "moduleName": "Core",
+            "usedInScenes": [
+                "Assets/Scenes/George_Scene.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "Collider2D",
+            "fullManagedTypeName": "UnityEngine.Collider2D",
+            "moduleName": "Physics2D",
+            "usedInScenes": [
+                "Assets/Scenes/George_Scene.unity",
+                "Assets/Scenes/WaylundScene.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "RectTransform",
+            "fullManagedTypeName": "UnityEngine.RectTransform",
+            "moduleName": "Core",
+            "usedInScenes": [
+                "Assets/Scenes/George_Scene.unity",
+                "Assets/Scenes/WaylundScene.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "Motion",
+            "fullManagedTypeName": "UnityEngine.Motion",
+            "moduleName": "Animation",
+            "usedInScenes": [
+                "Assets/Scenes/George_Scene.unity",
+                "Assets/Scenes/WaylundScene.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "",
+            "nativeClass": "LevelGameManager",
+            "fullManagedTypeName": "",
+            "moduleName": "Core",
+            "usedInScenes": [
+                "Assets/Scenes/George_Scene.unity",
+                "Assets/Scenes/WaylundScene.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "LightmapSettings",
+            "fullManagedTypeName": "UnityEngine.LightmapSettings",
+            "moduleName": "Core",
+            "usedInScenes": [
+                "Assets/Scenes/George_Scene.unity",
                 "Assets/Scenes/WaylundScene.unity"
             ]
         },
@@ -226,117 +522,9 @@
         },
         {
             "managedAssemblyName": "UnityEngine.dll",
-            "nativeClass": "AudioBehaviour",
-            "fullManagedTypeName": "UnityEngine.AudioBehaviour",
-            "moduleName": "Audio",
-            "usedInScenes": [
-                "Assets/Scenes/WaylundScene.unity"
-            ]
-        },
-        {
-            "managedAssemblyName": "UnityEngine.dll",
-            "nativeClass": "AudioListener",
-            "fullManagedTypeName": "UnityEngine.AudioListener",
-            "moduleName": "Audio",
-            "usedInScenes": [
-                "Assets/Scenes/WaylundScene.unity"
-            ]
-        },
-        {
-            "managedAssemblyName": "UnityEngine.dll",
-            "nativeClass": "Rigidbody2D",
-            "fullManagedTypeName": "UnityEngine.Rigidbody2D",
-            "moduleName": "Physics2D",
-            "usedInScenes": [
-                "Assets/Scenes/WaylundScene.unity"
-            ]
-        },
-        {
-            "managedAssemblyName": "UnityEngine.dll",
-            "nativeClass": "BoxCollider2D",
-            "fullManagedTypeName": "UnityEngine.BoxCollider2D",
-            "moduleName": "Physics2D",
-            "usedInScenes": [
-                "Assets/Scenes/WaylundScene.unity"
-            ]
-        },
-        {
-            "managedAssemblyName": "UnityEngine.dll",
-            "nativeClass": "PolygonCollider2D",
-            "fullManagedTypeName": "UnityEngine.PolygonCollider2D",
-            "moduleName": "Physics2D",
-            "usedInScenes": [
-                "Assets/Scenes/WaylundScene.unity"
-            ]
-        },
-        {
-            "managedAssemblyName": "UnityEngine.dll",
             "nativeClass": "Canvas",
             "fullManagedTypeName": "UnityEngine.Canvas",
             "moduleName": "UI",
-            "usedInScenes": [
-                "Assets/Scenes/WaylundScene.unity"
-            ]
-        },
-        {
-            "managedAssemblyName": "UnityEngine.dll",
-            "nativeClass": "AnimationClip",
-            "fullManagedTypeName": "UnityEngine.AnimationClip",
-            "moduleName": "Animation",
-            "usedInScenes": [
-                "Assets/Scenes/WaylundScene.unity"
-            ]
-        },
-        {
-            "managedAssemblyName": "UnityEngine.dll",
-            "nativeClass": "Animator",
-            "fullManagedTypeName": "UnityEngine.Animator",
-            "moduleName": "Animation",
-            "usedInScenes": [
-                "Assets/Scenes/WaylundScene.unity"
-            ]
-        },
-        {
-            "managedAssemblyName": "UnityEngine.dll",
-            "nativeClass": "AnimatorController",
-            "fullManagedTypeName": "UnityEditor.Animations.AnimatorController",
-            "moduleName": "Animation",
-            "usedInScenes": [
-                "Assets/Scenes/WaylundScene.unity"
-            ]
-        },
-        {
-            "managedAssemblyName": "UnityEngine.dll",
-            "nativeClass": "RuntimeAnimatorController",
-            "fullManagedTypeName": "UnityEngine.RuntimeAnimatorController",
-            "moduleName": "Animation",
-            "usedInScenes": [
-                "Assets/Scenes/WaylundScene.unity"
-            ]
-        },
-        {
-            "managedAssemblyName": "UnityEngine.dll",
-            "nativeClass": "Font",
-            "fullManagedTypeName": "UnityEngine.Font",
-            "moduleName": "TextRendering",
-            "usedInScenes": [
-                "Assets/Scenes/WaylundScene.unity"
-            ]
-        },
-        {
-            "managedAssemblyName": "UnityEngine.dll",
-            "nativeClass": "Behaviour",
-            "fullManagedTypeName": "UnityEngine.Behaviour",
-            "moduleName": "Core",
-            "usedInScenes": [
-                "Assets/Scenes/WaylundScene.unity"
-            ]
-        },
-        {
-            "managedAssemblyName": "UnityEngine.dll",
-            "nativeClass": "Renderer",
-            "fullManagedTypeName": "UnityEngine.Renderer",
-            "moduleName": "Core",
             "usedInScenes": [
                 "Assets/Scenes/WaylundScene.unity"
             ]
@@ -361,99 +549,9 @@
         },
         {
             "managedAssemblyName": "UnityEngine.dll",
-            "nativeClass": "SpriteShapeRenderer",
-            "fullManagedTypeName": "UnityEngine.U2D.SpriteShapeRenderer",
-            "moduleName": "SpriteShape",
-            "usedInScenes": [
-                "Assets/Scenes/WaylundScene.unity"
-            ]
-        },
-        {
-            "managedAssemblyName": "UnityEngine.dll",
-            "nativeClass": "Sprite",
-            "fullManagedTypeName": "UnityEngine.Sprite",
-            "moduleName": "Core",
-            "usedInScenes": [
-                "Assets/Scenes/WaylundScene.unity"
-            ]
-        },
-        {
-            "managedAssemblyName": "UnityEngine.dll",
-            "nativeClass": "Texture2D",
-            "fullManagedTypeName": "UnityEngine.Texture2D",
-            "moduleName": "Core",
-            "usedInScenes": [
-                "Assets/Scenes/WaylundScene.unity"
-            ]
-        },
-        {
-            "managedAssemblyName": "UnityEngine.dll",
-            "nativeClass": "RenderSettings",
-            "fullManagedTypeName": "UnityEngine.RenderSettings",
-            "moduleName": "Core",
-            "usedInScenes": [
-                "Assets/Scenes/WaylundScene.unity"
-            ]
-        },
-        {
-            "managedAssemblyName": "UnityEngine.dll",
-            "nativeClass": "Component",
-            "fullManagedTypeName": "UnityEngine.Component",
-            "moduleName": "Core",
-            "usedInScenes": [
-                "Assets/Scenes/WaylundScene.unity"
-            ]
-        },
-        {
-            "managedAssemblyName": "UnityEngine.dll",
-            "nativeClass": "Transform",
-            "fullManagedTypeName": "UnityEngine.Transform",
-            "moduleName": "Core",
-            "usedInScenes": [
-                "Assets/Scenes/WaylundScene.unity"
-            ]
-        },
-        {
-            "managedAssemblyName": "UnityEngine.dll",
-            "nativeClass": "Texture",
-            "fullManagedTypeName": "UnityEngine.Texture",
-            "moduleName": "Core",
-            "usedInScenes": [
-                "Assets/Scenes/WaylundScene.unity"
-            ]
-        },
-        {
-            "managedAssemblyName": "UnityEngine.dll",
-            "nativeClass": "GameObject",
-            "fullManagedTypeName": "UnityEngine.GameObject",
-            "moduleName": "Core",
-            "usedInScenes": [
-                "Assets/Scenes/WaylundScene.unity"
-            ]
-        },
-        {
-            "managedAssemblyName": "UnityEngine.dll",
-            "nativeClass": "SpriteRenderer",
-            "fullManagedTypeName": "UnityEngine.SpriteRenderer",
-            "moduleName": "Core",
-            "usedInScenes": [
-                "Assets/Scenes/WaylundScene.unity"
-            ]
-        },
-        {
-            "managedAssemblyName": "UnityEngine.dll",
             "nativeClass": "AudioClip",
             "fullManagedTypeName": "UnityEngine.AudioClip",
             "moduleName": "Audio",
-            "usedInScenes": [
-                "Assets/Scenes/WaylundScene.unity"
-            ]
-        },
-        {
-            "managedAssemblyName": "",
-            "nativeClass": "NavMeshSettings",
-            "fullManagedTypeName": "",
-            "moduleName": "AI",
             "usedInScenes": [
                 "Assets/Scenes/WaylundScene.unity"
             ]
@@ -469,63 +567,9 @@
         },
         {
             "managedAssemblyName": "UnityEngine.dll",
-            "nativeClass": "MonoBehaviour",
-            "fullManagedTypeName": "UnityEngine.MonoBehaviour",
-            "moduleName": "Core",
-            "usedInScenes": [
-                "Assets/Scenes/WaylundScene.unity"
-            ]
-        },
-        {
-            "managedAssemblyName": "UnityEngine.dll",
-            "nativeClass": "Collider2D",
-            "fullManagedTypeName": "UnityEngine.Collider2D",
-            "moduleName": "Physics2D",
-            "usedInScenes": [
-                "Assets/Scenes/WaylundScene.unity"
-            ]
-        },
-        {
-            "managedAssemblyName": "UnityEngine.dll",
-            "nativeClass": "RectTransform",
-            "fullManagedTypeName": "UnityEngine.RectTransform",
-            "moduleName": "Core",
-            "usedInScenes": [
-                "Assets/Scenes/WaylundScene.unity"
-            ]
-        },
-        {
-            "managedAssemblyName": "UnityEngine.dll",
-            "nativeClass": "Motion",
-            "fullManagedTypeName": "UnityEngine.Motion",
-            "moduleName": "Animation",
-            "usedInScenes": [
-                "Assets/Scenes/WaylundScene.unity"
-            ]
-        },
-        {
-            "managedAssemblyName": "UnityEngine.dll",
             "nativeClass": "CanvasRenderer",
             "fullManagedTypeName": "UnityEngine.CanvasRenderer",
             "moduleName": "UI",
-            "usedInScenes": [
-                "Assets/Scenes/WaylundScene.unity"
-            ]
-        },
-        {
-            "managedAssemblyName": "",
-            "nativeClass": "LevelGameManager",
-            "fullManagedTypeName": "",
-            "moduleName": "Core",
-            "usedInScenes": [
-                "Assets/Scenes/WaylundScene.unity"
-            ]
-        },
-        {
-            "managedAssemblyName": "UnityEngine.dll",
-            "nativeClass": "LightmapSettings",
-            "fullManagedTypeName": "UnityEngine.LightmapSettings",
-            "moduleName": "Core",
             "usedInScenes": [
                 "Assets/Scenes/WaylundScene.unity"
             ]
@@ -547,6 +591,13 @@
         {
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
+            "fullManagedTypeName": "ColorPicker",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
             "fullManagedTypeName": "FloorLava",
             "moduleName": "",
             "usedInScenes": []
@@ -561,7 +612,21 @@
         {
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
+            "fullManagedTypeName": "MenuController",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
             "fullManagedTypeName": "Movement",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Mover",
             "moduleName": "",
             "usedInScenes": []
         },
@@ -575,7 +640,14 @@
         {
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
-            "fullManagedTypeName": "PlayerController_bak",
+            "fullManagedTypeName": "SelfDestruct",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Wiggle",
             "moduleName": "",
             "usedInScenes": []
         },
@@ -587,9 +659,37 @@
             "usedInScenes": []
         },
         {
-            "managedAssemblyName": "Unity.2D.SpriteShape.Runtime.dll",
+            "managedAssemblyName": "Unity.TextMeshPro.dll",
             "nativeClass": "",
-            "fullManagedTypeName": "UnityEngine.U2D.SpriteShapeController",
+            "fullManagedTypeName": "TMPro.TMP_FontAsset",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.TextMeshPro.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "TMPro.TMP_Settings",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.TextMeshPro.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "TMPro.TMP_SpriteAsset",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.TextMeshPro.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "TMPro.TMP_StyleSheet",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.TextMeshPro.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "TMPro.TextMeshPro",
             "moduleName": "",
             "usedInScenes": []
         },

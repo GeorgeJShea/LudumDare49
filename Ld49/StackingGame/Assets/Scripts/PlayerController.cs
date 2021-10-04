@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     public float rightBound = 9f;
 
     private float y_value = 4f;
+    private System.DateTime lastSpawnTime = System.DateTime.Now.AddSeconds(-2);
 
     // Start is called before the first frame update
     void Start()
@@ -26,8 +27,11 @@ public class PlayerController : MonoBehaviour
 
             // check if the player is trying to drop the block
             if (Input.GetKeyDown(KeyCode.Space)) {
-                //instantiate block
-                spawnNewBlock();
+                if (lastSpawnTime.AddSeconds(2) < System.DateTime.Now) {
+                    //instantiate block
+                    spawnNewBlock();
+                    lastSpawnTime = System.DateTime.Now;
+                }
             }
             movePlatform();
         } else if (Input.GetKeyDown(KeyCode.Return)) {

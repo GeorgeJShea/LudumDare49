@@ -15772,11 +15772,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double Math_Atan_m438908172C5B689E75F752B8622
 {
 	return atan(___d0);
 }
-// System.Double System.Math::Atan2(System.Double,System.Double)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double Math_Atan2_mA24D76763D337277DBA8F5141E3D8C301AF3E668 (double ___y0, double ___x1, const RuntimeMethod* method)
-{
-	return atan2(___y0, ___x1);
-}
 // System.Double System.Math::Ceiling(System.Double)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double Math_Ceiling_mDD3C8C576909D9E0B006203355E61AB0A13ACB28 (double ___a0, const RuntimeMethod* method)
 {
